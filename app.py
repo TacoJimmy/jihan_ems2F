@@ -17,7 +17,7 @@ import PowerMeter
 
 def Publish_IAQ():
     try:
-        IAQ_Data = IAQ_Sensor.GetIAQ('/dev/ttyS1',2)
+        IAQ_Data = IAQ_Sensor.GetIAQ('/dev/ttyS1',1)
         client = mqtt.Client()
         client.on_connect
         client.username_pw_set('fkvRuzah5rKvCb9mZbjG','XXX')
