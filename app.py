@@ -20,7 +20,6 @@ def Publish_IAQ():
         IAQ_Data = IAQ_Sensor.GetIAQ('/dev/ttyS1',1)
         client = mqtt.Client()
         client.on_connect
-        client.username_pw_set('fkvRuzah5rKvCb9mZbjG','XXX')
         client.connect('thingsboard.cloud', 1883, 60)
         TimeStamp = IAQ_Sensor.Current_ms()
         
